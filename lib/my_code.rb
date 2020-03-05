@@ -16,7 +16,6 @@ end
 def reduce(array, starting_value = nil)
 i = 0
 accum = 0
-arr = []
 if starting_value
   accum += starting_value
 else 
