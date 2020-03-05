@@ -17,14 +17,15 @@ def reduce(array, starting_value = nil)
 i = 0
 accum = 0
 if starting_value
-  accum += starting_value
+  accum = starting_value
 else 
   accum = array[0]
   i = 1
+end
 while i < array.length  
  accum = yield(accum, array[i])
  i += 1
   end
   return accum
 end
-end
+
